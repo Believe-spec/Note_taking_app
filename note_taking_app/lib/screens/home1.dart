@@ -164,6 +164,7 @@ class _Home1State extends State<Home1> {
                   ),
                 ),
               ),
+
               SizedBox(height: 20),
 
               Row(
@@ -351,6 +352,44 @@ class _Home1State extends State<Home1> {
           ),
         ),
       ),
+
+      bottomNavigationBar: BottomAppBar(
+        shape: const CircularNotchedRectangle(),
+        notchMargin: 8,
+        elevation: 8,
+        child: SizedBox(
+          height: 70,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              IconButton(
+                onPressed: () {},
+                icon: const Icon(Icons.home_rounded, color: Colors.blue),
+              ),
+
+              IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.edit_note_outlined),
+              ),
+              const SizedBox(width: 40),
+
+              IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.check_circle_outline),
+              ),
+
+              IconButton(onPressed: () {}, icon: Icon(Icons.person_2_outlined)),
+            ],
+          ),
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        backgroundColor: Colors.white,
+        elevation: 4,
+        child: const Icon(Icons.add, color: Colors.black, size: 30),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 }
